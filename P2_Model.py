@@ -107,8 +107,16 @@ class Cohort:
 
 
 # Testing cohort
+# mimicking fair coin, P(H) = 0.5
 TestCohort = Cohort(id=1, pop_size=1000, head_prob=0.5)
 print('Average game reward in dollars:', TestCohort.simulate())
 
 TestCohort = Cohort(id=2, pop_size=1000, head_prob=0.5)
+print('Average game reward in dollars:', TestCohort.simulate())
+
+# running with P(H) = 0.4
+TestCohort = Cohort(id=1, pop_size=1000, head_prob=0.4)
+print('Average game reward in dollars:', TestCohort.simulate())
+
+TestCohort = Cohort(id=2, pop_size=1000, head_prob=0.4)
 print('Average game reward in dollars:', TestCohort.simulate())
